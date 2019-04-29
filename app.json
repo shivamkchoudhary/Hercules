@@ -1,5 +1,5 @@
 {
-  "name": "IronHyde",
+  "name": "Prakaska",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
   "keywords": [
     "telegram",
@@ -8,7 +8,7 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/Yash-Garg/IronHyde-bot",
+  "repository": "Empty :0",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
@@ -20,11 +20,11 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "482352271"
+      "value": "686956429"
     },
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": "Yash Garg"
+      "value": "Prakaska"
     },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
@@ -52,7 +52,7 @@
     },
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
-      "value": "https://www.paypal.me/YGarg917"
+      "value": "FREE :0"
     },
     "PORT": {
       "description": "Port to use for your webhooks",
