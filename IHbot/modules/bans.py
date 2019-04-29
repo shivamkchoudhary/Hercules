@@ -41,7 +41,7 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
             raise
 
     if is_user_ban_protected(chat, user_id, member):
-        message.reply_text("I really wish I could ban admins...")
+        message.reply_text("Kaash main Is Chu Admin ko Ban kar Pata :p")
         return ""
 
     if user_id == bot.id:
@@ -104,7 +104,7 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
             raise
 
     if is_user_ban_protected(chat, user_id, member):
-        message.reply_text("I really wish I could ban admins...")
+        message.reply_text("Kaash main Is Chu Admin ko Ban kar Pata :p")
         return ""
 
     if user_id == bot.id:
@@ -187,7 +187,7 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
             raise
 
     if is_user_ban_protected(chat, user_id):
-        message.reply_text("I really wish I could kick admins...")
+        message.reply_text("Kaash main Is Chu Admin ko Kick kar Pata :p")
         return ""
 
     if user_id == bot.id:
@@ -198,7 +198,7 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
     if res:
         bot.send_sticker(chat.id, BAN_STICKER)
         keyboard = []
-        reply = "{} has been kicked!".format(mention_html(member.user.id, member.user.first_name))
+        reply = "{} Foot Yaha Se".format(mention_html(member.user.id, member.user.first_name))
         message.reply_text(reply, reply_markup=keyboard, parse_mode=ParseMode.HTML)
 
         log = "<b>{}:</b>" \
@@ -228,12 +228,12 @@ def kickme(bot: Bot, update: Update):
         update.effective_message.reply_text("Oof, I can't kick my master.")
         return 
     elif is_user_admin(update.effective_chat, user_id):
-          update.effective_message.reply_text("I wish I could... but you're an admin.")
+          update.effective_message.reply_text("Kaash main Is Chu Admin ko Kick kar Pata :p.")
           return
 
     res = update.effective_chat.unban_member(user_id)  # unban on current user = kick
     if res:
-        update.effective_message.reply_text("No problem.")
+        update.effective_message.reply_text("Lmao He is chu af :p")
     else:
         update.effective_message.reply_text("Huh? I can't :/")
 
@@ -249,12 +249,12 @@ def banme(bot: Bot, update: Update):
         update.effective_message.reply_text("Oof, I can't ban my master.")
         return
     elif is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("I wish I could... but you're an admin.")
+        update.effective_message.reply_text("Kaash main Is Chu Admin ko Ban kar Pata :p.")
         return
 
     res = update.effective_chat.kick_member(user_id)
     if res:
-        update.effective_message.reply_text("No problem, banned.")
+        update.effective_message.reply_text("hahaha chu tha bahut bada wala")
         log = "<b>{}:</b>" \
               "\n#BANME" \
               "\n<b>User:</b> {}" \
@@ -298,7 +298,7 @@ def unban(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     chat.unban_member(user_id)
-    message.reply_text("Yep, this user can join!")
+    message.reply_text("Haha Ab Ye Wapas Ayega :p")
 
     log = "<b>{}:</b>" \
           "\n#UNBANNED" \
