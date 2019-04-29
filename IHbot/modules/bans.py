@@ -61,13 +61,13 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
     try:
         chat.kick_member(user_id)
         bot.send_sticker(chat.id, BAN_STICKER)
-        message.reply_text("Banned!")
+        message.reply_text("Chutiya")
         return log
 
     except BadRequest as excp:
         if excp.message == "Reply message not found":
             # Do not reply
-            message.reply_text('Banned!', quote=False)
+            message.reply_text('Chutiya', quote=False)
             return log
         else:
             LOGGER.warning(update)
@@ -202,7 +202,7 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
         message.reply_text(reply, reply_markup=keyboard, parse_mode=ParseMode.HTML)
 
         log = "<b>{}:</b>" \
-              "\n#KICKED" \
+              "\n#Foot Yaha Se" \
               "\n<b>Admin:</b> {}" \
               "\n<b>User:</b> {} (<code>{}</code>)".format(html.escape(chat.title),
                                                            mention_html(user.id, user.first_name),
