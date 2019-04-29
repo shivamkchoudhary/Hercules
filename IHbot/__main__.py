@@ -22,11 +22,14 @@ PM_START_TEXT = """
 Hello {}, my name is {}!
 
 I'm a group manager bot maintained by [this wonderful person](tg://user?id={}). I'm built in python3, using the \
-python-telegram-bot library.
+python-telegram-bot library, and am fully opensource - you can find what makes me tick \
+[here](https://github.com/Yash-Garg/IronHyde-Bot)!
 
 You can find the list of available commands with /help.
 
-If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
+[Click here to add me in your groups](https://telegram.me/TheThuggBot?startgroup=add)
+
+Free Hai Bro!
 """
 
 HELP_STRINGS = """
@@ -47,7 +50,8 @@ the things I can help you with.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """FREE
+DONATE_STRING = """Heya, glad to hear you want to donate!
+But It is Totally Free !!"""
 
 IMPORTED = {}
 MIGRATEABLE = []
