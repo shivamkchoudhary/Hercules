@@ -6,7 +6,7 @@ from IHbot.modules.helper_funcs.msg_types import Types
 from IHbot.modules.sql import SESSION, BASE
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
-DEFAULT_GOODBYE = "Nice knowing ya!"
+DEFAULT_GOODBYE = "Chal Foot Idhar Se"
 
 
 class Welcome(BASE):
