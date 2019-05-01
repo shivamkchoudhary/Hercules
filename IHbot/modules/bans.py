@@ -61,13 +61,13 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
     try:
         chat.kick_member(user_id)
         bot.send_sticker(chat.id, BAN_STICKER)
-        message.reply_text("Chutiya")
+        message.reply_text("Master, that Chu has Banned")
         return log
 
     except BadRequest as excp:
         if excp.message == "Reply message not found":
             # Do not reply
-            message.reply_text('Chutiya', quote=False)
+            message.reply_text('Master, that Chu has Banned', quote=False)
             return log
         else:
             LOGGER.warning(update)
