@@ -118,7 +118,7 @@ def birthday(bot: Bot, update: Update, args: List[str]):
     if args:
         username = str(",".join(args))
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
-    for i in range(5):
+    for i in range(10
         bdaymessage = random.choice(MESSAGES)
         update.effective_message.reply_text(bdaymessage + username)
 
