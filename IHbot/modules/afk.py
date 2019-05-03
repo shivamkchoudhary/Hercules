@@ -22,7 +22,7 @@ def afk(bot: Bot, update: Update):
         reason = ""
 
     sql.set_afk(update.effective_user.id, reason)
-    update.effective_message.reply_text("{} ne Mobile Charging par laga diya".format(update.effective_user.first_name))
+    update.effective_message.reply_text("{} is going to Fap right now".format(update.effective_user.first_name))
 
 
 @run_async
@@ -34,7 +34,7 @@ def no_longer_afk(bot: Bot, update: Update):
 
     res = sql.rm_afk(user.id)
     if res:
-        update.effective_message.reply_text("{} wapas aa gaya cuz Mobile has been Charged".format(update.effective_user.first_name))
+        update.effective_message.reply_text("{} is back after Fapping so long".format(update.effective_user.first_name))
 
 
 @run_async
