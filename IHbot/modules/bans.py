@@ -298,7 +298,7 @@ def unban(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     chat.unban_member(user_id)
-    message.reply_text("Haha Ab Ye Wapas Ayega :p")
+    message.reply_text("Now gib moni else ban again")
 
     log = "<b>{}:</b>" \
           "\n#UNBANNED" \
