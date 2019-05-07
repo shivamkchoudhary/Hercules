@@ -27,7 +27,7 @@ python-telegram-bot library \
 
 You can find the list of available commands with /help.
 
-[Click here to add me in your groups](https://telegram.me/TheThuggBot?startgroup=add)
+[Click here to add me in your groups](https://telegram.me/TheShinChan_Bot?startgroup=add)
 
 Free Hai Bro!
 """
